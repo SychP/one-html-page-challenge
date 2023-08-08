@@ -3,7 +3,7 @@ name: Run Project Pipeline
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build_and_run:
