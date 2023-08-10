@@ -1,4 +1,4 @@
-name: Run Project Pipeline
+name: Display Name Action
 
 on:
   push:
@@ -6,20 +6,14 @@ on:
       - master
 
 jobs:
-  build_and_run:
+  display_name:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-
-    - name: Build Docker image
-      run: docker build -t my-node-app .
-
-    - name: Run Docker container
-      run: docker run -p 8080:8080 my-node-app
+    - name: Display Name
+      run: |
+        echo "Pavlo"
+        echo "Sych"
