@@ -1,4 +1,4 @@
-name: Display Name Action
+name: Display Name
 
 on:
   push:
